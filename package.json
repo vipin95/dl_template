@@ -13,9 +13,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "start": "npm run start1",
+    "start1":"react-scripts start",
     "create_comp": "cd ${location:-src} && mkdir ${name:-new_folder} && cd ${name:-new_folder} && touch index.js && touch index.test.js && mkdir public && cd public && mkdir css && cd css && touch index.css",
     "create_folder": "cd ${location:-src} && mkdir ${name:-new_folder} && cd ${name:-new_folder} && touch index.js && touch index.test.js",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
