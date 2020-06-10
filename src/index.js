@@ -9,10 +9,10 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 const hist = createBrowserHistory();
 const AdminLogin = (props)=>{
   return (
-    <React.Fragment>
+    <div>
       <Header/>
       <Form formType={1}/> 
-    </React.Fragment>
+    </div>
   )
  }
  const AdminSignUp = (props)=>{

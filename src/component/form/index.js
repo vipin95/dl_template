@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './public/css/index.css';
 import Div from '../Div/index';
@@ -56,7 +57,7 @@ const RedirectForLoginOrSignUp = (props)=>{
       <React.Fragment>
         <Div class="text-center">
           <span>already have an account?</span>
-          <a href="/admin"> Login </a>
+          <Link to="/admin">Login</Link>
         </Div>
       </React.Fragment>
     )
@@ -66,7 +67,7 @@ const RedirectForLoginOrSignUp = (props)=>{
       return(
         <React.Fragment>
           <span>do not have an account?</span>
-          <a href="/admin/signUp"> SignUp </a>
+          <Link to="/admin/signUp">Login</Link>
         </React.Fragment>
       )
     }
