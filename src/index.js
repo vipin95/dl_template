@@ -36,15 +36,16 @@ ReactDOM.render(
     1 = Login form
   */
  
- <Router history={hist}>
-    <Switch>
-      <Route path="/admin/login" component={AdminLogin} />
-      <Route path="/admin/signUp" component={AdminSignUp} />
-      <Redirect from="/admin" to="/admin/login"/>
-      <Route path="/" component={()=><h1>dashboard</h1>} />
+//  <Router history={hist}>
+//     <Switch>
+//       <Route path="/admin/login" component={AdminLogin} />
+//       <Route path="/admin/signUp" component={AdminSignUp} />
+//       <Redirect from="/admin" to="/admin/login"/>
+//       <Route path="/" component={()=><h1>dashboard</h1>} />
       
-    </Switch>
-  </Router>
+//     </Switch>
+//   </Router>
+"kjdkfj"
   ,
   document.getElementById('root')
 );
