@@ -20,7 +20,7 @@ const ForgotPasswordToggel = (props)=>{
     if(props.formType === 1){
       return(
         <React.Fragment>
-          <Div class="float-left"><Link to="/admin/forgotPassword" className="px-0">Forget Password</Link></Div>
+          <Div class="float-left"><Link to="//admin/login/forgotPassword" className="px-0">Forget Password</Link></Div>
           <Div class="float-right"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
         </React.Fragment>
       )

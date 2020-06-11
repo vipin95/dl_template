@@ -49,7 +49,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin/signUp" component={AdminSignUp} />
-      <Route path="/admin/forgotPassword" component={AdminForgetPassword} />
+      <Route path="/admin/login/forgotPassword" component={AdminForgetPassword} />
       <Redirect from="/admin" to="/admin/login"/>
       <Route path="/" component={()=><h1>dashboard</h1>} />
     </Switch>
