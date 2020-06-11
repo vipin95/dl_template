@@ -20,10 +20,21 @@ const ForgotPasswordToggel = (props)=>{
     if(props.formType === 1){
       return(
         <React.Fragment>
-          <Div class="float-left"><a href="https://www.google.com/" className="px-0">Forget Password</a></Div>
+          <Div class="float-left"><Link to="/admin/forgotPassword" className="px-0">Forget Password</Link></Div>
           <Div class="float-right"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
         </React.Fragment>
       )
+    }else{
+      if(props.formType ===2){
+        return(
+          <React.Fragment>
+            <Div class="text-center"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
+          </React.Fragment>
+        )
+      }
+      else{
+        return null;
+      }
     }
   }
 }
@@ -47,7 +58,17 @@ const FormInputType = (props)=>{
       )
     }
     else{
-      alert("Please Enter correct form type in form Element : ./signup/index.js");
+      if(props.formType ===2){
+        return(
+          <React.Fragment>
+            <p className="text-center text-dark h6 mb-3"><small>Please enter your register Email address.</small></p>
+            <InputTypeEmail/>
+          </React.Fragment>
+        )
+      }
+      else{
+        alert("Please Enter correct form type in form Element : ./signup/index.js");
+      }
     }
   }
 }
@@ -70,6 +91,9 @@ const RedirectForLoginOrSignUp = (props)=>{
           <Link to="/admin/signUp">Sign Up</Link>
         </React.Fragment>
       )
+    }
+    else{
+      return null;
     }
   }
 }

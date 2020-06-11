@@ -23,6 +23,14 @@ const AdminLogin = (props)=>{
     </div>
   )
  }
+ const AdminForgetPassword = (props)=>{
+  return (
+    <div>
+      <Header/>
+      <Form formType={2}/> 
+    </div>
+  )
+ }
 ReactDOM.render(
   /* TODO
       will read about " React.StrictMode "
@@ -34,15 +42,16 @@ ReactDOM.render(
   /*  Notes
     0 = Register form
     1 = Login form
+    2 = Forget password
   */
  
  <Router history={hist}>
     <Switch>
       <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin/signUp" component={AdminSignUp} />
+      <Route path="/admin/forgotPassword" component={AdminForgetPassword} />
       <Redirect from="/admin" to="/admin/login"/>
       <Route path="/" component={()=><h1>dashboard</h1>} />
-      
     </Switch>
   </Router>
   ,
