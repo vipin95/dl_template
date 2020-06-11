@@ -67,7 +67,7 @@ const RedirectForLoginOrSignUp = (props)=>{
       return(
         <React.Fragment>
           <span>do not have an account?</span>
-          <Link to="/admin/signUp">Login</Link>
+          <Link to="/admin/signUp">Sign Up</Link>
         </React.Fragment>
       )
     }
