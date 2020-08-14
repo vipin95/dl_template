@@ -1,17 +1,19 @@
 import React from "react";
+import Fields , { Button , Footer } from "../Forgot_Password";
 
 function Form(Props){
   return(
     <div>
-      <p className="h1 m-0">{name}</p>
+      <p className="h1 m-0">{Props.name}</p>
       <hr/>
       <form>
-        {/* form fields */}
-        <p>form fields</p>
+        <Fields/>
+        <Button/>
+        {/* form fields and button */}
       </form>
       <div>
+        {/* <Footer/> */}
         {/* form footer */}
-        <p>form footer</p>
       </div>
     </div>
   );

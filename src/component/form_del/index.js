@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './public/css/index.css';
 import Div from '../Div/index';
 import InputTypePassword from '../inputTypePassword/index';
-import InputTypeEmail from '../inputTypeEmail/index';
+import InputTypeEmail from '../inputType/index';
 import Button from '../button/index';
 import { formDetail } from '../../variables';
 
@@ -12,7 +12,7 @@ const ForgotPasswordToggel = (props)=>{
   if(props.formType === 0){
     return(
       <React.Fragment>
-        <Div class="text-center"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
+        <Div className="text-center"><Button className="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
       </React.Fragment>
     )
   }
@@ -20,15 +20,15 @@ const ForgotPasswordToggel = (props)=>{
     if(props.formType === 1){
       return(
         <React.Fragment>
-          <Div class="float-left"><Link to="/admin/login/forgotPassword" className="px-0">Forget Password</Link></Div>
-          <Div class="float-right"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
+          <div className="float-left"><Link to="/admin/login/forgotPassword" className="px-0">Forget Password</Link></div>
+          <div className="float-right"><Button className="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></div>
         </React.Fragment>
       )
     }else{
       if(props.formType ===2){
         return(
           <React.Fragment>
-            <Div class="text-center"><Button class="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
+            <Div className="text-center"><Button className="btn btn-primary px-4" buttonName={formDetail[props.formType].button_label}/></Div>
           </React.Fragment>
         )
       }
@@ -76,7 +76,7 @@ const RedirectForLoginOrSignUp = (props)=>{
   if(props.formType === 0){
     return(
       <React.Fragment>
-        <Div class="text-center">
+        <Div className="text-center">
           <span>already have an account?</span>
           <Link to="/admin">Login</Link>
         </Div>
