@@ -1,22 +1,17 @@
 {
-  "name": "dl_template",
+  "name": "my_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "history": "^4.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "create_comp": "cd ${location:-src/component} && mkdir ${name:-new_folder} && cd ${name:-new_folder} && touch index.js && touch index.test.js && mkdir public && cd public && mkdir css && cd css && touch index.css",
-    "create_folder": "cd ${location:-src} && mkdir ${name:-new_folder} && cd ${name:-new_folder} && touch index.js && touch index.test.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

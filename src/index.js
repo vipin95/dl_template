@@ -1,40 +1,13 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Header from './component/header/index';
-import Form from './component/form';
-import { createBrowserHistory } from "history";
-import { Router, Route, Switch, Redirect } from "react-router-dom";
-
-// Page import
-import SignUp from '../src/pages/SignUp';
-
-const hist = createBrowserHistory();
 
 ReactDOM.render(
-  /* TODO
-      will read about " React.StrictMode "
-  */
-  // <React.StrictMode>    
-  //   <Header text="kdjfkdjfk"/>
-  // </React.StrictMode>
- 
- <Router history={hist}>
-    <Switch>
-      {/* <Route path="/admin/login" component={AdminLogin} />
-      <Route path="/admin/signUp" component={AdminSignUp} />
-      <Route path="/admin/login/forgotPassword" component={AdminForgetPassword} /> */}
-      <Route path="/Header" component={()=><Header/>} />
-      <Route path="/signUp_comp" component={()=><Form name="Forgot Password"/>} />
-      <Redirect from="/admin" to="/admin/login" />
-
-      <Route path="/signUp" component={()=><SignUp name="Forgot Password"/>}/>
-
-
-      <Route path="/" component={()=><h1>dashboard</h1>} />
-    </Switch>
-  </Router>
-  ,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
