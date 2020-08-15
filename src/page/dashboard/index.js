@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../../component/header/index';
-import SignUpForm from '../../component/signUp/index';
+// import SignUpForm from '../../component/signUp/index';
+import Login from '../../component/login';
 
 function Dashboard(props){
   return(
-    <React.StrictMode>
+    <React.Fragment>
       <Header/>
-      <SignUpForm/>
-    </React.StrictMode>
+      {/* <SignUpForm/> */}
+      <Login/>
+    </React.Fragment>
   )
 }
 
