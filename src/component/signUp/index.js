@@ -20,8 +20,7 @@ function signUp(props){
             <div className="mt-4">
               <div class="text-center">
                 <span>already have an account?</span>
-                {/* <Link to="/admin">Login</Link> */}
-                <a href="jfdkfjdkf"> Login</a>
+                <Link to="/login">Login</Link>
               </div>
             </div>
           </div>

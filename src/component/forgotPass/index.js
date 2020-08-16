@@ -17,13 +17,6 @@ function Login(props){
             <div className="div_button_forgetPassword">
               <div class="text-center"><button class="btn btn-primary px-4">Submit</button></div>
             </div>
-            {/* <div className="mt-4">
-              <div class="text-center">
-                <span>do not have an account?</span>
-                <Link to="/admin">Login</Link>
-                <a href="jfdkfjdkf"> Sign Up</a>
-              </div>
-            </div> */}
           </div>
         </form>
       </div>

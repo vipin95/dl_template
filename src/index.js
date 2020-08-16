@@ -1,11 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Dashboard from './page/dashboard';
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
+import Root from './page/root';
+import Login from './page/login';
+import ForgotPass from './page/forgotPass';
+
+const hist = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard/>
+    <Router history={hist}>
+      <Switch>
+        <Route path="/login" component={()=><Login/>} />
+        <Route path="/forgot/Password" component={()=><ForgotPass/>} />
+        {/* <Redirect from="/admin" to="/admin/login"/> */}
+        <Route path="/" component={()=><Root/>} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
