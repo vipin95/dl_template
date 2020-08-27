@@ -13,10 +13,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={hist}>
       <Switch>
-        <Route path="/login" component={()=><Login/>} />
+        <Route path="/" component={()=><Login/>} />
         <Route path="/forgot/Password" component={()=><ForgotPass/>} />
         {/* <Redirect from="/admin" to="/admin/login"/> */}
-        <Route path="/" component={()=><Root/>} />
+        <Route path="/SignUp" component={()=><Root/>} />
       </Switch>
     </Router>
   </React.StrictMode>,
