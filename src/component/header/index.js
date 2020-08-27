@@ -9,7 +9,7 @@ class Header extends React.Component{
     return(
       <div className="bg bg-primary">
         <div className="p-2 pl-0 text-center text-sm-left pl-sm-4">
-          <a href="#homePage" className="pl-4 pr-4 text-white logoFont">DL Test</a>
+          <a href="/" className="pl-4 pr-4 text-white logoFont">DL Test</a>
         </div>
       </div>
     )
