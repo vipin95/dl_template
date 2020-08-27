@@ -6,7 +6,7 @@ function Login(props){
   return(
     <div className="container-fluid  ">
       <div className="form_position position-relative" >
-        <form action="#">
+        <form>
           <p className="h1 m-0">Forgot password</p>
           <hr/>
           <div className="px-4 mx-4 mt-4">
@@ -15,7 +15,8 @@ function Login(props){
               <input type="email" required name="email" className="form-control mb-3" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email"/>
             </div>
             <div className="div_button_forgetPassword">
-              <div class="text-center"><button class="btn btn-primary px-4">Submit</button></div>
+              {/* <div className="text-center"><button  className="btn btn-primary px-4">Submit</button></div> */}
+              <div className="text-center"><Link to="/login/forgotPassword/success" className="btn btn-primary px-4">Submit</Link></div>
             </div>
           </div>
         </form>

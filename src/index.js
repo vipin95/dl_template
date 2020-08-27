@@ -6,6 +6,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Root from './page/root';
 import Login from './page/login';
 import ForgotPass from './page/forgotPass';
+import ForgotPassSuccess from './page/forgotPassSuccess';
 
 const hist = createBrowserHistory();
 
@@ -13,10 +14,13 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={hist}>
       <Switch>
-        <Route path="/" component={()=><Login/>} />
-        <Route path="/forgot/Password" component={()=><ForgotPass/>} />
+        {/* <Route path="/login/*" component={()=>"Page not found"} />
+        <Route path="/signUp/*" component={()=>"Page not found"} /> */}
+        <Route path="/login/forgotPassword/success" component={()=><ForgotPassSuccess/>} />
+        <Route path="/login/forgotPassword" component={()=><ForgotPass/>} />
+        <Route path="/login" component={()=><Login/>} />
         {/* <Redirect from="/admin" to="/admin/login"/> */}
-        <Route path="/SignUp" component={()=><Root/>} />
+        <Route path="/signUp" component={()=><Root/>} />
       </Switch>
     </Router>
   </React.StrictMode>,

@@ -15,11 +15,11 @@ function Login(props){
               <input type="password" required className="form-control mb-3" aria-describedby="emailHelp" placeholder="Enter password"/>
             </div>
             <div className="div_button_forgetPassword">
-              <div class="float-left"><Link to="/forgot/password" className="px-0">Forget Password</Link></div>
-              <div class="float-right"><button class="btn btn-primary px-4">Submit</button></div>
+              <div className="float-left"><Link to="/login/forgotPassword" className="px-0">Forget Password</Link></div>
+              <div className="float-right"><button className="btn btn-primary px-4">Submit</button></div>
             </div>
             <div className="mt-4">
-              <div class="text-center">
+              <div className="text-center">
                 <span>do not have an account?</span>
                 <Link to="/signUp">Sign Up</Link>
               </div>

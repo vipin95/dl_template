@@ -26,15 +26,15 @@ class SignUp extends React.Component{
             <hr/>
             <div className="px-4 mx-4 mt-4">
               <div className="form-group ">
-                <input type="text" onChange={this.matchPassword} required name="email" className="form-control mb-3" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email"/>
+                <input type="text" required name="email" className="form-control mb-3" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email"/>
                 <input type="password" id="password" required className="form-control mb-3" aria-describedby="emailHelp" placeholder="Enter password"/>
-                <input type="password" id="cPassword" required className="form-control mb-3" aria-describedby="emailHelp" placeholder='Confirm password'/>
+                <input type="password" onChange={this.matchPassword} id="cPassword" required className="form-control mb-3" aria-describedby="emailHelp" placeholder='Confirm password'/>
               </div>
               <div className="div_button_forgetPassword">
-              <div class="text-center"><button class="btn btn-primary px-4"> Registor </button></div>
+              <div className="text-center"><button className="btn btn-primary px-4"> Registor </button></div>
               </div>
               <div className="mt-4">
-                <div class="text-center">
+                <div className="text-center">
                   <span>already have an account?</span>
                   <Link to="/login">Login</Link>
                 </div>
