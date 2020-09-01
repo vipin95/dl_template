@@ -19,8 +19,8 @@ ReactDOM.render(
         <Route path="/login/forgotPassword/success" component={()=><ForgotPassSuccess/>} />
         <Route path="/login/forgotPassword" component={()=><ForgotPass/>} />
         <Route path="/login" component={()=><Login/>} />
-        {/* <Redirect from="/admin" to="/admin/login"/> */}
         <Route path="/signUp" component={()=><Root/>} />
+        <Redirect from="/" to="/login"/>
       </Switch>
     </Router>
   </React.StrictMode>,
