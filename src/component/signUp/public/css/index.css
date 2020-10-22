@@ -1,0 +1,15 @@
+.div_button_forgetPassword{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+  overflow: hidden;
+}
+.form_position{
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #c5c3c3;
+  padding: 20px 20px;
+  top: 5px;
+}
+@media only screen and (min-width: 600px) {
+  .form_position{
+    top: 40px;
+  }
+}
