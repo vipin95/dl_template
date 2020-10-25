@@ -7,6 +7,7 @@ import Root from './page/root';
 import Login from './page/login';
 import ForgotPass from './page/forgotPass';
 import ForgotPassSuccess from './page/forgotPassSuccess';
+import Dashboard from './page/dashboard';
 
 const hist = createBrowserHistory();
 
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/login/forgotPassword" component={()=><ForgotPass/>} />
         <Route path="/login" component={()=><Login/>} />
         <Route path="/signUp" component={()=><Root/>} />
+        <Route path="/Dashboard" component={()=><Dashboard/>} />
         <Redirect from="/" to="/login"/>
       </Switch>
     </Router>
