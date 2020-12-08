@@ -9,6 +9,7 @@ function Login(props){
         <form action="#">
           <p className="h1 m-0">Login</p>
           <hr/>
+          <p className="text-danger invalid_detail">invalid detail</p>
           <div className="px-4 mx-4 mt-4">
             <div className="form-group ">
               <input type="email" required name="email" className="form-control mb-3" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email"/>

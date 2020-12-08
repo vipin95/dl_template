@@ -8,6 +8,11 @@
   padding: 20px 20px;
   top: 5px;
 }
+.invalid_detail{
+  position: absolute;
+  top: 86px;
+  left: 40%;
+}
 @media only screen and (min-width: 600px) {
   .form_position{
     top: 40px;
