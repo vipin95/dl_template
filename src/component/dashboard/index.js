@@ -18,7 +18,7 @@ class Dash extends React.Component{
             </div>
           </div>
           <div className="float-right  bg-success">
-          "Xyz mavi"
+          "Xyz mavi G"
           </div>
         </div>
       </React.Fragment>
