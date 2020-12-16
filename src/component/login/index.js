@@ -2,6 +2,19 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './public/css/index.css';
 
+function check_invalid_char_in_password(pass){
+  let pass ="India@123";
+  let regularExpression = /^(?=.*[0-9])(?=.*[@#$*])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9@#$*]{6,16}$/;
+  let result = pass.match(regularExpression);
+  
+  if(pass == result){
+    alert("Valid password");
+  }
+  else{
+    alert("Invalid password");
+  }
+}
+
 function Login(props){
   return(
     <div className="container-fluid  ">
@@ -28,6 +41,7 @@ function Login(props){
           </div>
         </form>
       </div>
+      <button onClick={()=>check_invalid_char_in_password} className="btn btn-primary px-4">Submit</button>
     </div>
   )
 }
